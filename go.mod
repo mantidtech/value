@@ -1,6 +1,6 @@
-module code.mantid.org/value
+module github.com/mantidtech/value
 
-go 1.13
+go 1.14
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
