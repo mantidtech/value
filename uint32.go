@@ -21,7 +21,7 @@ func (u *Uint32) Get() interface{} {
 
 // Set a value from a string
 func (u *Uint32) Set(val string) error {
-	r, err := strconv.ParseUint(val, 10, 32)
+	r, err := strconv.ParseUint(val, 0, 32)
 	if err == nil {
 		*u = Uint32(r)
 	}

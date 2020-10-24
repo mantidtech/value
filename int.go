@@ -21,7 +21,7 @@ func (i *Int) Get() interface{} {
 
 // Set a value from a string
 func (i *Int) Set(val string) error {
-	r, err := strconv.ParseInt(val, 10, 32)
+	r, err := strconv.ParseInt(val, 0, 32)
 	if err == nil {
 		*i = Int(r)
 	}

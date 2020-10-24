@@ -112,6 +112,7 @@ func TestBindUint16(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Uint16(t *testing.T) {
 	a := uint16(50000)
 	got := Bind(&a)

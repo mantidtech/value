@@ -112,6 +112,7 @@ func TestBindString(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_String(t *testing.T) {
 	a := string("rawr")
 	got := Bind(&a)

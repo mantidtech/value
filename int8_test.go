@@ -112,6 +112,7 @@ func TestBindInt8(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Int8(t *testing.T) {
 	a := int8(-2)
 	got := Bind(&a)

@@ -112,6 +112,7 @@ func TestBindInt16(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Int16(t *testing.T) {
 	a := int16(25)
 	got := Bind(&a)

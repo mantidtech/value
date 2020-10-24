@@ -112,6 +112,7 @@ func TestBindFloat32(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Float32(t *testing.T) {
 	a := float32(4.12890625)
 	got := Bind(&a)

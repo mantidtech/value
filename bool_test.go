@@ -112,6 +112,7 @@ func TestBindBool(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Bool(t *testing.T) {
 	a := bool(true)
 	got := Bind(&a)

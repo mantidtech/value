@@ -21,7 +21,7 @@ func (i *Int8) Get() interface{} {
 
 // Set a value from a string
 func (i *Int8) Set(val string) error {
-	r, err := strconv.ParseInt(val, 10, 8)
+	r, err := strconv.ParseInt(val, 0, 8)
 	if err == nil {
 		*i = Int8(r)
 	}

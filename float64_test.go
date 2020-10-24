@@ -112,6 +112,7 @@ func TestBindFloat64(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Float64(t *testing.T) {
 	a := float64(5.5e32)
 	got := Bind(&a)

@@ -1,0 +1,267 @@
+{
+    "information": {
+        "type": [
+            "the type to generate a Value interface for"
+        ],
+        "no_factory": [
+            "Set no_factory=true if it's derived from a type that alias another type being",
+            "generated (eg rune and uint32).",
+            "Otherwise the generated factory method will fail with duplicated cases."
+        ],
+        "sample": [
+            "Contains two samples, named one and two.  These are used for automatically generated tests."
+        ],
+        "rval": [
+            "rval is a sample of the primitive being tested.",
+            "It must be a valid rvalue in a single value assignment statement.",
+            "It shouldn't be the zero value of the primitive.",
+            "The samples should be different values.",
+            "(Note: It's better to be different than not zero when there's no option, eg bool)"
+        ],
+        "str": [
+            "If the 'string' value of the primitive is different to the rval, then specify it here.",
+            "ie 'str' must be a valid value to use in v.Set(<str>).",
+            "v.Set(<str>).Get() must equal the rval"
+        ]
+    },
+    "types": [
+        {
+            "type": "bool",
+            "sample": {
+                "one": {
+                    "rval": "true"
+                },
+                "two": {
+                    "rval": "false"
+                }
+            }
+        },
+        {
+            "type": "byte",
+            "sample": {
+                "one": {
+                    "rval": "0x69",
+                    "str": "i"
+                },
+                "two": {
+                    "rval": "0x34",
+                    "str": "4"
+                }
+            }
+        },
+        {
+            "type": "complex64",
+            "sample": {
+                "one": {
+                    "rval": "complex(12, 6)",
+                    "str": "12+6i"
+                },
+                "two": {
+                    "rval": "complex(-2, 9)",
+                    "str": "-2+9i"
+                }
+            }
+        },
+        {
+            "type": "complex128",
+            "sample": {
+                "one": {
+                    "rval": "complex(17, 72)",
+                    "str": "17+72i"
+                },
+                "two": {
+                    "rval": "complex(3, -91)",
+                    "str": "3-91i"
+                }
+            }
+        },
+        {
+            "type": "float32",
+            "sample": {
+                "one": {
+                    "rval": "4.12890625"
+                },
+                "two": {
+                    "rval": "-61724.0"
+                }
+            }
+        },
+        {
+            "type": "float64",
+            "sample": {
+                "one": {
+                    "rval": "5.5E32"
+                },
+                "two": {
+                    "rval": "-800.525"
+                }
+            }
+        },
+        {
+            "type": "int",
+            "sample": {
+                "one": {
+                    "rval": "14"
+                },
+                "two": {
+                    "rval": "(2 << 30) - 1",
+                    "str": "2147483647"
+                }
+            }
+        },
+        {
+            "type": "int8",
+            "sample": {
+                "one": {
+                    "rval": "-2"
+                },
+                "two": {
+                    "rval": "50"
+                }
+            }
+        },
+        {
+            "type": "int16",
+            "sample": {
+                "one": {
+                    "rval": "25"
+                },
+                "two": {
+                    "rval": "8073"
+                }
+            }
+        },
+        {
+            "type": "int32",
+            "sample": {
+                "one": {
+                    "rval": "-500_125_432"
+                },
+                "two": {
+                    "rval": "-306"
+                }
+            }
+        },
+        {
+            "type": "int64",
+            "sample": {
+                "one": {
+                    "rval": "74"
+                },
+                "two": {
+                    "rval": "-2 << 45",
+                    "str": "-70368744177664"
+                }
+            }
+        },
+        {
+            "type": "rune",
+            "no_factory": true,
+            "sample": {
+                "one": {
+                    "rval": "'J'",
+                    "str": "J"
+                },
+                "two": {
+                    "rval": "'X'",
+                    "str": "X"
+                }
+            }
+        },
+        {
+            "type": "string",
+            "sample": {
+                "one": {
+                    "rval": "\"rawr\"",
+                    "str": "rawr"
+                },
+                "two": {
+                    "rval": "\"spam\"",
+                    "str": "spam"
+                }
+            }
+        },
+        {
+            "type": "time.Duration",
+            "sample": {
+                "one": {
+                    "rval": "64000000",
+                    "str": "64ms"
+                },
+                "two": {
+                    "rval": "98_000_000_000",
+                    "str": "98s"
+                }
+            }
+        },
+        {
+            "type": "time.Time",
+            "sample": {
+                "one": {
+                    "rval": "time.Unix(1588998294, 12_000_000).In(time.UTC)",
+                    "str": "2020-05-09T04:24:54.12Z"
+                },
+                "two": {
+                    "rval": "time.Unix(1589088181, 0).In(time.UTC)",
+                    "str": "2020-05-10T05:23:01Z"
+                }
+            }
+        },
+        {
+            "type": "uint",
+            "sample": {
+                "one": {
+                    "rval": "908"
+                },
+                "two": {
+                    "rval": "19001"
+                }
+            }
+        },
+        {
+            "type": "uint8",
+            "no_factory": true,
+            "sample": {
+                "one": {
+                    "rval": "3"
+                },
+                "two": {
+                    "rval": "200"
+                }
+            }
+        },
+        {
+            "type": "uint16",
+            "sample": {
+                "one": {
+                    "rval": "50000"
+                },
+                "two": {
+                    "rval": "603"
+                }
+            }
+        },
+        {
+            "type": "uint32",
+            "sample": {
+                "one": {
+                    "rval": "78465734"
+                },
+                "two": {
+                    "rval": "31902"
+                }
+            }
+        },
+        {
+            "type": "uint64",
+            "sample": {
+                "one": {
+                    "rval": "6"
+                },
+                "two": {
+                    "rval": "18446744073709551615"
+                }
+            }
+        }
+    ]
+}

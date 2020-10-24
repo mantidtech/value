@@ -112,6 +112,7 @@ func TestBindByte(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Byte(t *testing.T) {
 	a := byte(0x69)
 	got := Bind(&a)

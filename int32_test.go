@@ -112,6 +112,7 @@ func TestBindInt32(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Int32(t *testing.T) {
 	a := int32(-500_125_432)
 	got := Bind(&a)

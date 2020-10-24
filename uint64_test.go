@@ -112,6 +112,7 @@ func TestBindUint64(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Uint64(t *testing.T) {
 	a := uint64(6)
 	got := Bind(&a)

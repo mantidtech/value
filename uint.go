@@ -21,7 +21,7 @@ func (u *Uint) Get() interface{} {
 
 // Set a value from a string
 func (u *Uint) Set(val string) error {
-	r, err := strconv.ParseUint(val, 10, 16)
+	r, err := strconv.ParseUint(val, 0, 16)
 	if err == nil {
 		*u = Uint(r)
 	}

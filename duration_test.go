@@ -113,6 +113,7 @@ func TestBindDuration(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Duration(t *testing.T) {
 	a := time.Duration(64000000)
 	got := Bind(&a)

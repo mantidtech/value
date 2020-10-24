@@ -113,6 +113,7 @@ func TestBindTime(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Time(t *testing.T) {
 	a := time.Time(time.Unix(1588998294, 12_000_000).In(time.UTC))
 	got := Bind(&a)

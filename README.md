@@ -1,3 +1,5 @@
+![Go](https://github.com/mantidtech/value/workflows/Go/badge.svg)
+
 # value
 
 An interface and implementation for a bunch of types. See [value.go](value.go)

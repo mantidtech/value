@@ -112,6 +112,7 @@ func TestBindComplex128(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Complex128(t *testing.T) {
 	a := complex128(complex(17, 72))
 	got := Bind(&a)

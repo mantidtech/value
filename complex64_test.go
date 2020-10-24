@@ -112,6 +112,7 @@ func TestBindComplex64(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Complex64(t *testing.T) {
 	a := complex64(complex(12, 6))
 	got := Bind(&a)

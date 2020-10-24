@@ -1,6 +1,6 @@
 package value
 
-// Value specifies the interface required for types that are to be used for flags
+// Value specifies the interface required for the defined types
 type Value interface {
 	Type() string
 	Get() interface{}

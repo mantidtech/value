@@ -112,6 +112,7 @@ func TestBindUint32(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Uint32(t *testing.T) {
 	a := uint32(78465734)
 	got := Bind(&a)

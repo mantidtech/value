@@ -112,6 +112,7 @@ func TestBindUint(t *testing.T) {
 		})
 	}
 }
+
 func TestFactoryBind_Uint(t *testing.T) {
 	a := uint(908)
 	got := Bind(&a)
